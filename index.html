@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marsel's Resume</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="profile">
+            <div class="profile_container">
+                <div class="profile_profileImg">
+                    <img src="assets/img/pp.png" alt="Marselianus Herdian">
+                </div>
+                <div class="profile_tag">
+                    <h1 class="profile_name">
+                        <span>Marselianus Herdian</span>
+                        <span>Setyanugraha</span>
+                    </h1>
+                    <p class="profile_title">Programmer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="group-1">
+            <div class="about">
+                <h3 class="title">About me</h3>
+                <p class="description" style="text-align: justify;">I am a fresh graduate of Informatics Engineering from Sekolah Tinggi Informatika & Komputer Indonesia
+                    Malang (also known as STIKI), with a focus on web development.
+                    Throughout my studies, I actively engaged in coursework projects, organization and completed a sixmonth internship in Scheduling Automation App Module development at STIKI Malang.
+                    Certified in Web Developer Level VI, I possess skills mostly in Javascript, and PHPwith a strong
+                    motivation for problem-solving, learning new things and effective teamwork.</p>
+            </div>
+        </div>
+
+        <div class="group-2">
+            <div class="academic">
+                <h3 class="title">Academic background</h3>
+                <div>
+                    <div class="sub_group">
+                        <div class="sub_sub_group">
+                            <p class="sub_title">Sekolah Tinggi Informatika dan Komputer Indonesia</p>
+                            <p class="academic_year">2017-2023</p>
+                        </div>
+                        <div class="sub_sub_group">
+                            <p class="description">Bachelor of Informatics Engineering</p>
+                            <p class="gpa">3.41/4 (GPA)</p>
+                        </div>
+                    </div>
+                    <div class="sub_group">
+                        <div class="sub_sub_group">
+                            <p class="sub_title">SMAK Kolese santo yusup</p>
+                            <p class="academic_year">2014-2017</p>
+                        </div>
+                        <div class="sub_sub_group">
+                            <p class="description">Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="group-3">
+            <div class="Career">
+                <h3 class="title">Career History</h3>
+                <div>
+                    <div class="sub_group">
+                        <div class="sub_sub_group">
+                            <p class="sub_title">Sekolah Tinggi Informatika dan Komputer Indonesia</p>
+                            <p class="academic_year">2020-2021</p>
+                        </div>
+                        <div>
+                            <p class="description">APPLICATION MODULE DEVELOPER (INTERNSHIP)</p>
+                            <ul class="list_description" style="font-weight: 400;">
+                                <li>Involved in developing and improving an automation scheduling module with a team.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="group-4">
+            <div class="skills1">
+                <h3 class="title">Soft Skills</h3>
+                <ul class="list_description">
+                    <li>Self-motivated</li>
+                    <li>Hard Working</li>
+                    <li>Analytical Thinking</li>
+                    <li>Critical Thinking</li>
+                    <li>Logical Thinking</li>
+                    <li>Time Management</li>
+                    <li>Teamwork</li>
+                    <li>Initiative</li>
+                    <div include-html="tester.html"></div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="group-5">
+            <div class="skills2">
+                <h3 class="title">Hard Skills</h3>
+                <ul class="list_description">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="group-6 ">
+            <div class="language">
+                <h3 class="title">Languages</h3>
+                <ul class="list_description">
+                    <li>English : Fluent (TOEFL:527)</li>
+                    <li>Indonesian : Native</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="etc">
+            <h3 class="title">etc.</h3>
+            <div class="items">
+                <div class="item_tok">
+                    <button onclick="toggle2()"><i data-feather="smartphone"></i></button>
+                    <span>Contacts</span>
+                </div>
+                <div class="item_tok">
+                    <button onclick="toggle1()"><i data-feather="briefcase"></i></button>
+                    <span>Projects</span>
+                </div>
+                <div class="item_tok">
+                    <button onclick="window.open('https://www.linkedin.com/in/marselianus-herdian-223301161/' + location.search)"><i data-feather="linkedin"></i></button>
+                    <span>LinkedIn</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup1">
+        <div w3-include-html="project-list.html"></div>
+    </div>
+
+    <div id="popup2">
+        <span class="close-btn" onclick="toggle2()">&times</span>
+        <h1 id="popup-title">Contacts</h1>
+
+        <div class="kontak">
+            <div class="sub-kontak">
+                <i data-feather="phone-call"></i>
+                <span><strong>Whatsapp :</strong></span>
+                <span>+6289652928308</span>
+            </div>
+            <div class="sub-kontak">
+                <i data-feather="mail"></i>
+                <span><strong>Email :</strong></span>
+                <span>marsel.herdian@gmail.com</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>
